@@ -2,7 +2,7 @@
 
 /**
  * _printf - produces output according to format
- *@format: character string
+ * @format: character string
  *
  * Return: number of characters printed
  */
