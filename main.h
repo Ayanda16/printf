@@ -4,6 +4,8 @@
 #include<stdarg.h>
 #include<stdlib.h>
 #include<unistd.h>
+#include<stdio.h>
+#include<limits.h>
 
 /**
  * struct convert - defines a structure for symbols and functions
@@ -26,5 +28,15 @@ int print_percent(va_list args);
 int print_integer(va_list args);
 int _putchar(char c);
 int print_number(va_list args);
-
+int print_binary(va_list args);
+int print_reversed(va_list arg);
+int rot13(va_list args);
+int print_unsigned_integer(va_list args);
+int print_octal(va_list args);
+int print_hex(va_list args);
+int print_heX(va_list args);
+int _puts(char *str, int ascii);
+char *convert_base(unsigned long nb, unsigned int base, int upper);
+int convert_alpha_numeric(int nb, int upper);
+int _strlen_recursion(char *s);
 #endif
