@@ -39,4 +39,7 @@ int _puts(char *str, int ascii);
 char *convert_base(unsigned long nb, unsigned int base, int upper);
 int convert_alpha_numeric(int nb, int upper);
 int _strlen_recursion(char *s);
+int print_pointer(va_list args);
+char *convert_base_pointer(unsigned long p);
+int _write_char(char c);
 #endif

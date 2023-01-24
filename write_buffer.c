@@ -1,7 +1,7 @@
 #include"main.h"
 
 /**
- * _putchar - writes the character c to stdout
+ * _write_char - writes the character c to stdout
  * @c: The character to print
  * Return: On success 1.
  * On error, -1 is returned, and errno is set appropriately.
@@ -9,7 +9,7 @@
  * as little as possible
  */
 
-int _putchar(char c)
+int _write_char(char c)
 {
 	static char buffer[1024];
 	static int i;
