@@ -3,7 +3,7 @@
 /**
 * print_binary - prints a binary number.
 * @args: arguments.
-* Return: .
+* Return: 1.
 */
 
 int print_binary(va_list args)
