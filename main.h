@@ -8,7 +8,7 @@
 #include<limits.h>
 
 /**
- * struct convert - defines a structure for symbol and functions
+ * struct convert - defines a structure for symbols and functions
  * @op: operator
  * @f: function associated
  */
