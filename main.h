@@ -8,6 +8,25 @@
 #include<limits.h>
 
 /**
+ * struct flags - struct containing flags to "turn on"
+ * when a flag specifier is passed to _printf()
+ * @plus: display a plus sign preceeding positive values
+ * @space: print a space before a positive value
+ * @hash: convert to an alternane forn
+ * @zero: pad with leading zeros
+ * @minus: left justify output
+ */
+
+typedef struct flags
+{
+	int plus;
+	int space;
+	int hash;
+	int zero;
+	int minus;
+} flags_t;
+
+/**
  * struct convert - defines a structure for symbols and functions
  * @op: operator
  * @f: function associated
@@ -42,4 +61,6 @@ int _strlen_recursion(char *s);
 int print_pointer(va_list args);
 char *convert_base_pointer(unsigned long p);
 int _write_char(char c);
+int get_flag(char s, flags_t *f);
+
 #endif
